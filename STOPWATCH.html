@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>STOPWATCH</title>
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+<header>
+        <nav>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="TIMER.html">TIMER</a></li>
+                <li><a href="WORLD CLOCK.html">CLOCK</a></li>
+            </ul>
+        </nav>
+        </header>
+<body>
+    <div class="wrapper" id="wrapper">
+        <img src="clock.svg" width="260px" />
+
+      <h2>STOPWATCH</h2>
+        <p><span id="timerHrs">00</span>: <span id="timerMins">00</span>: <span id="timerSec">00</span>: <span id="timerMilisec">000</span></p>
+
+            <div class="buttons">
+                    <button id="startBtn" onclick="startStop()">Start</button>
+                    <button id="resetBtn" onclick="reset()">Reset</button>
+                    <button id="lapBtn" onclick="lap()">Lap</button>
+            </div>
+
+            <h1>Laps:</h1>
+
+            <div id="laps">
+                    <p id="lapRecord"></p>
+            </div>
+    </div>
+
+</body>
+<script src="try.js"></script>
+</html>
